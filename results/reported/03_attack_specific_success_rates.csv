@@ -1,0 +1,9 @@
+﻿Attack Type,Cloud-only,Conventional multi-objective,Security-filtered heuristic,Trust-aware offloading,SecureEdgeAgent w/o adaptation,Full SecureEdgeAgent
+Direct malicious request,42,35,9.5,13,6,3
+Direct prompt injection,48.5,43,15,18.5,9.5,5.5
+Indirect prompt injection,55,49.5,19,22,12.5,7.5
+Unauthorized tool invocation,38,32.5,8,11,4,1.5
+Sensitive-data exfiltration,51.5,43,14,16.5,7.5,3
+Adversarial context manipulation,39,35.5,12.5,14,7,4
+Compromised edge node,35,28,17.5,7.5,10,2
+Resource-exhaustion attack,44.5,39,15,18,13,12.5

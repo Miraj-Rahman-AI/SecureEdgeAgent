@@ -1,0 +1,14 @@
+﻿Time (s),Phase,Full: Trust Score,Full: Assignment to Compromised Node (%),Trust-aware: Trust Score,Trust-aware: Assignment (%),No-adaptation: Trust Score,No-adaptation: Assignment (%)
+0,Normal,0.92,72,0.92,72,0.92,72
+10,Normal,0.93,74,0.93,74,0.92,73
+20,Normal,0.94,75,0.94,75,0.92,74
+30,Normal,0.94,76,0.94,76,0.92,74
+40,Compromise begins,0.82,52,0.88,67,0.92,74
+50,Compromised,0.58,18,0.77,51,0.92,73
+60,Compromised,0.35,3,0.66,34,0.92,73
+70,Compromised,0.29,1,0.55,18,0.92,72
+80,Compromised,0.27,0,0.46,7,0.92,72
+90,Recovery begins,0.39,4,0.49,9,0.92,73
+100,Recovery,0.55,18,0.53,14,0.92,73
+110,Recovery,0.68,35,0.58,21,0.92,74
+120,Recovered,0.79,51,0.62,29,0.92,74

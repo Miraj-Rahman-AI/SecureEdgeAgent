@@ -1,0 +1,9 @@
+﻿Network/Resource Condition,Full Latency (ms),Conventional Latency (ms),Cloud-only Latency (ms),Full STCR (%),Conventional STCR (%),Cloud-only STCR (%)
+Stable,285,350,680,91.3,79.8,73.4
+Low bandwidth,335,490,1120,89.2,72.6,59.8
+High propagation delay,362,530,1260,88.7,70.9,57.5
+5% packet loss,348,515,1175,89,71.8,60.4
+Edge congestion,410,640,745,87.5,68.4,72.2
+Cloud congestion,320,430,980,90.1,76.3,61.5
+Mobility/handover,375,570,915,87.9,69.5,65.2
+Edge-node failure,455,720,790,85.8,63.2,70.4

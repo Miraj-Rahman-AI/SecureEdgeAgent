@@ -1,0 +1,13 @@
+﻿Method,Avg Latency (ms),P95 Latency (ms),P99 Latency (ms),Energy (J/task),Communication (MB/task),Task Success (%),Secure Task Completion (%),Deadline Violation (%),Throughput (tasks/s)
+Device-only,920,1450,1820,6.8,0.2,72.4,69.1,24.8,8.6
+Edge-only,410,680,850,4.9,3.8,82.6,76.5,12.7,18.4
+Cloud-only,680,1080,1450,3.6,8.9,91.8,73.4,18.9,22.5
+Random offloading,620,1040,1360,5,4.7,81.9,70.8,20.2,15.9
+Latency-aware,300,490,650,4.7,4.1,84.2,75.4,8.7,25.8
+Energy-aware,510,840,1100,2.9,3.1,79.8,71.6,15.5,17.1
+Accuracy-aware,640,990,1280,4,7.4,92.4,75.2,17.3,21.9
+Conventional multi-objective,350,560,730,3.8,4.5,88.7,79.8,9.4,24.1
+Security-filtered heuristic,440,710,910,4.2,3.9,84.9,84.1,11.6,20.4
+Trust-aware offloading,390,640,820,4,4.1,86.1,85.4,10.2,21.6
+SecureEdgeAgent w/o adaptation,330,520,690,3.7,3.8,90.2,89.1,7.2,25.6
+Full SecureEdgeAgent,285,440,575,3.4,3.2,92.1,91.3,5.1,28.4

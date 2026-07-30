@@ -1,0 +1,19 @@
+﻿Attribute,Observed/Selected Value
+Application,Connected-vehicle hazard-response agent
+Input,Sensor anomaly + natural-language request + location context
+Task complexity score,0.78
+Data-sensitivity score,0.71
+Intrinsic risk score,0.68
+Nearest edge-node trust,0.41
+Alternative edge-node trust,0.88
+Cloud-service trust,0.93
+Selected execution plan,Hybrid: local sanitization + trusted edge reasoning + cloud verification
+Privacy control,Location generalization and identifier removal
+Requested tool,Emergency-notification interface
+Tool authorization,Approved with least-privilege policy
+End-to-end latency (ms),312
+Energy consumption (J),3.1
+Communication volume (MB),2.7
+Task outcome,Correct and policy-compliant
+Attack/policy violation,None
+Post-execution trust update,Alternative edge: 0.88 → 0.90

@@ -1,0 +1,13 @@
+﻿Method,Attack Success (%),Detection Precision (%),Detection Recall (%),Detection F1 (%),Privacy Leakage (%),Unauthorized Tool Execution (%),False Positive (%),Compromised-Node Selection (%),Trust Detection Delay (s)
+Device-only,31.5,68,54,60.2,8.4,13.9,8.2,24.6,
+Edge-only,38.8,64,50,56.1,16.7,20.5,9.6,31.8,
+Cloud-only,44.2,66,51,57.6,27.4,18.7,8.9,28.9,
+Random offloading,46.5,60,45,51.4,22.8,24.6,11.7,35.2,
+Latency-aware,42.1,62,48,54.1,20.3,22.8,10.4,33.6,
+Energy-aware,40.7,63,49,55.1,18.4,21.7,10.1,30.7,
+Accuracy-aware,45.4,65,51,57.2,25.6,19.8,9.4,29.8,
+Conventional multi-objective,39.6,66,55,60,17.5,18.9,8.8,26.4,
+Security-filtered heuristic,13.8,91.6,88.9,90.2,5.8,7.9,6.4,18.5,
+Trust-aware offloading,17.2,89.2,86.5,87.8,6.2,8.4,5.9,6.8,28
+SecureEdgeAgent w/o adaptation,8.7,94.1,91.7,92.9,2.4,4.5,3.7,8.4,42
+Full SecureEdgeAgent,4.9,96.3,94.8,95.5,1.2,2.1,2.9,2.1,14

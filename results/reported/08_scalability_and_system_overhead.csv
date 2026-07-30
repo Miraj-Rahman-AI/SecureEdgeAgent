@@ -1,0 +1,7 @@
+﻿Users,Full Latency (ms),Conventional Latency (ms),Full Throughput,Conventional Throughput,Full Decision Overhead (ms),Conventional Overhead (ms),Full SLA Violation (%),Conventional SLA Violation (%),Full GPU Utilization (%),Conventional GPU Utilization (%)
+10,210,250,9.8,9.2,8.5,3.8,2,5,35,31
+50,235,295,32.5,29.8,10.2,4.5,2.8,7.2,46,44
+100,270,365,49.8,44.1,12.7,5.6,3.9,10.5,58,60
+200,330,470,67.2,59.4,15.8,6.8,5.7,14.8,72,77
+300,395,585,79.6,69.2,18.9,7.9,7.9,18.6,83,88
+500,520,760,91,79.5,24.5,9.5,11.8,24.2,92,96
