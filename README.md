@@ -5,7 +5,7 @@
 SecureEdgeAgent is a research-oriented implementation scaffold for security-first autonomous-agent execution across device, edge, cloud, and hybrid environments. It integrates task profiling, task-risk analysis, dynamic node-trust evaluation, privacy-aware placement, tool authorization, secure-sandbox policy checks, multi-objective offloading, runtime monitoring, and feedback-driven adaptation.
 
 <p align="center">
-  <img src="docs/assets/secureedgeagent_architecture.png" alt="SecureEdgeAgent architecture" width="900"/>
+  <img src="docs/assets/SecureEdgeAgent architecture.png" alt="SecureEdgeAgent architecture" width="900"/>
 </p>
 
 ## Release status
