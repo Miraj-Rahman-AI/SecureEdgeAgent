@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [
-    { name = "Mahabubur Rahman Miraj" }
+    { name = "" }
 ]
 dependencies = [
     "PyYAML>=6.0"
