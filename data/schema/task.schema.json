@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SecureEdgeAgent Task",
+  "type": "object",
+  "required": [
+    "task_id",
+    "category",
+    "security_class",
+    "input_size_mb",
+    "output_size_mb",
+    "compute_demand",
+    "memory_gb",
+    "bandwidth_mbps",
+    "deadline_ms",
+    "required_quality",
+    "sensitivity",
+    "requested_tools",
+    "reasoning_score",
+    "context_score",
+    "tool_score",
+    "multimodal_score",
+    "malicious_intent",
+    "injection_probability",
+    "adversarial_input",
+    "tool_risk",
+    "minimum_trust",
+    "maximum_risk",
+    "required_isolation",
+    "decomposable",
+    "attack_type"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string"
+    },
+    "security_class": {
+      "enum": [
+        "benign",
+        "policy-sensitive",
+        "adversarial"
+      ]
+    },
+    "input_size_mb": {
+      "type": "number",
+      "minimum": 0
+    },
+    "output_size_mb": {
+      "type": "number",
+      "minimum": 0
+    },
+    "compute_demand": {
+      "type": "number",
+      "minimum": 0
+    },
+    "memory_gb": {
+      "type": "number",
+      "minimum": 0
+    },
+    "bandwidth_mbps": {
+      "type": "number",
+      "minimum": 0
+    },
+    "deadline_ms": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "required_quality": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "sensitivity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "requested_tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "reasoning_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "context_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "tool_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "multimodal_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "malicious_intent": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "injection_probability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "adversarial_input": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "tool_risk": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "minimum_trust": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "maximum_risk": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "required_isolation": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "decomposable": {
+      "type": "boolean"
+    },
+    "attack_type": {
+      "enum": [
+        "none",
+        "direct-malicious-request",
+        "direct-prompt-injection",
+        "indirect-prompt-injection",
+        "unauthorized-tool-invocation",
+        "sensitive-data-exfiltration",
+        "adversarial-context-manipulation",
+        "compromised-edge-node",
+        "resource-exhaustion"
+      ]
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}
