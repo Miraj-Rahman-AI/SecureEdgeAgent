@@ -1,0 +1,47 @@
+# Reference defaults implementing the manuscript equations.
+# The manuscript reports ranges but does not provide every internal coefficient.
+
+complexity_weights:
+  reasoning: 0.30
+  context: 0.30
+  tool: 0.20
+  multimodal: 0.20
+
+risk_weights:
+  malicious_intent: 0.25
+  prompt_injection: 0.25
+  adversarial_input: 0.15
+  sensitivity: 0.20
+  tool_risk: 0.15
+
+execution_risk_weights:
+  task_risk: 0.40
+  trust_deficit: 0.25
+  exposure: 0.20
+  vulnerability: 0.15
+
+trust_weights:
+  integrity: 0.25
+  availability: 0.15
+  historical_behavior: 0.20
+  policy_compliance: 0.20
+  security_monitoring: 0.20
+
+objective_weights:
+  latency: 0.25
+  energy: 0.15
+  communication: 0.10
+  utility: 0.20
+  risk: 0.30
+
+trust_smoothing: 0.80
+default_minimum_trust: 0.60
+default_maximum_risk: 0.40
+normalization_epsilon: 1.0e-9
+
+security_overhead_ms: 8.5
+security_energy_j: 0.05
+handoff_overhead_ms: 6.0
+
+hybrid_partition_step: 0.25
+dynamic_objective_weights: true
