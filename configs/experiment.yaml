@@ -1,0 +1,32 @@
+seed: 42
+independent_runs: 5
+decision_interval_seconds: 1
+maximum_tool_execution_seconds: 30
+
+splits:
+  train: 7200
+  validation: 1800
+  evaluation: 3000
+
+workload_categories:
+  simple-information-query: 2000
+  sensor-context-interpretation: 2000
+  multi-step-planning: 2000
+  privacy-sensitive-reasoning: 2000
+  tool-based-action-execution: 2000
+  long-context-reasoning: 2000
+
+security_classes:
+  benign: 5400
+  policy-sensitive: 3000
+  adversarial: 3600
+
+evaluation_attacks:
+  direct-malicious-request: 200
+  direct-prompt-injection: 200
+  indirect-prompt-injection: 200
+  unauthorized-tool-invocation: 200
+  sensitive-data-exfiltration: 200
+  adversarial-context-manipulation: 200
+  compromised-edge-node: 200
+  resource-exhaustion: 200
