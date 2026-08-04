@@ -1,0 +1,74 @@
+# Hardware and model names follow the manuscript testbed.
+# Compute capacities are normalized simulator capacities, not GPU FLOPS claims.
+
+nodes:
+  - node_id: device-0
+    tier: device
+    model_name: Qwen2.5-1.5B-Instruct-4bit
+    compute_capacity: 5.0
+    memory_gb: 8.0
+    bandwidth_mbps: 100.0
+    uplink_mbps: 100.0
+    downlink_mbps: 100.0
+    queue_delay_ms: 3.0
+    model_capability: 0.58
+    efficiency: 0.72
+    trust_score: 0.95
+    energy_coefficient: 0.38
+    communication_power_w: 0.25
+    service_cost: 0.01
+    exposure: 0.05
+    vulnerability: 0.08
+    isolation_level: 3
+    maximum_sensitivity: 1.00
+    authorized_tools:
+      - read_sensor
+      - database_read
+
+  - node_id: edge-0
+    tier: edge
+    model_name: Qwen2.5-7B-Instruct-BF16
+    compute_capacity: 35.0
+    memory_gb: 24.0
+    bandwidth_mbps: 1000.0
+    uplink_mbps: 100.0
+    downlink_mbps: 100.0
+    queue_delay_ms: 8.0
+    model_capability: 0.80
+    efficiency: 0.86
+    trust_score: 0.88
+    energy_coefficient: 0.20
+    communication_power_w: 1.50
+    service_cost: 0.03
+    exposure: 0.25
+    vulnerability: 0.12
+    isolation_level: 4
+    maximum_sensitivity: 0.82
+    authorized_tools:
+      - read_sensor
+      - database_read
+      - knowledge_search
+      - send_notification
+
+  - node_id: cloud-0
+    tier: cloud
+    model_name: Qwen2.5-72B-Instruct-BF16-8TP
+    compute_capacity: 120.0
+    memory_gb: 320.0
+    bandwidth_mbps: 1000.0
+    uplink_mbps: 250.0
+    downlink_mbps: 250.0
+    queue_delay_ms: 18.0
+    model_capability: 0.96
+    efficiency: 0.92
+    trust_score: 0.93
+    energy_coefficient: 0.12
+    communication_power_w: 2.50
+    service_cost: 0.08
+    exposure: 0.52
+    vulnerability: 0.10
+    isolation_level: 4
+    maximum_sensitivity: 0.62
+    authorized_tools:
+      - database_read
+      - knowledge_search
